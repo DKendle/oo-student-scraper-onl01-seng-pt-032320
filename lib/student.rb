@@ -29,4 +29,8 @@ class Student
     self.send("profile_quote=", attributes_hash[:profile_quote])
     self.send("bio=", attributes_hash[:bio])
   end
+
+  def self.all
+    @@all
+  end
 end
